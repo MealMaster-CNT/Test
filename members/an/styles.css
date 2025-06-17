@@ -1,0 +1,54 @@
+html {
+    font-family: Lato;
+}
+.page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 50px;
+}
+.content {
+    flex: 1;
+    margin-top: 10px;
+}
+.button {
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    background-color: rgb(26, 95, 245);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.button:hover {
+    box-shadow: inset 0px 0px 2px black;
+}
+
+.button-active {
+    background-color: black;
+    color: white;
+}
+.profile-picture {
+    width: 150px;
+    border-radius: 1000px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: width 0.15s, margin-top 0.15s, margin-bottom 0.15s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.profile-picture:hover {
+    cursor:pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
