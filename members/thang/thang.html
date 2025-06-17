@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .profile-container {
+            position: relative;
+            width: 650px;
+            height: 300px;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 20px;
+        }
+
+        .profile_picture {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(35%);
+            width: 156px;
+            height: 156px;
+            border-radius: 50%;
+            background-color: lightgray;
+            z-index: 2;
+            object-fit: cover;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            margin-bottom: 15px;
+        }
+
+        .content_box {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.05);
+            display: block;
+            margin: auto;
+            width: 650px
+        }
+
+        h3 {
+            margin-left: 160px;
+        }
+
+        hr {
+            width: 650px
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 0;
+        }
+
+        header h4 {
+            margin: 0;
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding-bottom: 1px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+
+        .slider {
+            width: 600px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slides img {
+            width: 600px;
+            height: 300px;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        .nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .nav button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .nav button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h4> Hello guys</h4>
+        </header>
+    </div>
+
+    <div style="margin-top:50px">
+        <div class="profile-container">
+            <img src="background.JPG" class="background-img" alt="Background">
+            <img src="serious dog.jpg" class="profile_picture" alt="Profile Picture">
+        </div>
+    </div>
+
+    <div display="block">
+        <h3> Self-description </h3>
+
+        <hr>
+        <div class="content_box">
+
+            <p style="text-align:center"> Thap roi tu do1</p>
+        </div>
+    </div>
+    <div display="block">
+        <h3> Some information </h3>
+
+        <hr>
+        <div class="content_box">
+
+            <p style="text-align:center"> Thap roi tu do2</p>
+        </div>
+    </div>
+    <div display="block">
+        <h3> Habits and abilities </h3>
+
+        <hr>
+        <div class="content_box">
+
+            <p style="text-align:center"> Thap roi tu do3</p>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slides" id="slideContainer">
+            <img src="serious dog.jpg" style="width:600px;height:300px" alt="Slide 1">
+            <img src="serious dog.jpg" style="width:600px;height:300px" alt="Slide 2">
+            <img src="serious dog.jpg" style="width:600px;height:300px" alt="Slide 3">
+        </div>
+        <div class="nav">
+            <button onclick="moveSlide(-1)">❮</button>
+            <button onclick="moveSlide(1)">❯</button>
+        </div>
+    </div>
+
+    <script>
+        const slideContainer = document.getElementById('slideContainer');
+        const totalSlides = slideContainer.children.length;
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            slideContainer.style.transform = `translateX(-${currentIndex * 600}px)`;
+        }
+    </script>
+    <div>
+        <h3> Music</h3>
+    </div>
+    <hr>
+    <div class="content_box" style="width:650px; height:380px;">
+        <video width="640" height="360" controls>
+            <source src="music.mp4" type="video/mp4">
+        </video>
+    </div>
+    <footer>
+        <p> goodbye guys</p>
+    </footer>
+    </script>
+
+</body>
+
+</html>
