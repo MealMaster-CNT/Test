@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Trang Cá Nhân - Nguyễn Thị Phương Thảo</title>
+		<style>
+			body {
+				font-family: 'Arial';
+				margin: 0;
+				background-color: #f9f9f9;
+			}
+
+
+			header {
+				background-color: white;
+				box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+			}
+
+
+			header h1 {
+				margin: 0;
+				font-size: 24px;
+			}
+			
+
+			.banner {
+				background: url("https://images.pexels.com/photos/32438210/pexels-photo-32438210.jpeg") no-repeat center center;
+				background-size: 800px 300px;
+				padding-top: 400px;
+				padding-bottom: 85px;
+				margin-top: -150px;
+				margin-bottom: -100px;
+			}
+			
+
+			.section {
+				max-width: 800px;
+				margin: 40px auto;
+				padding: 0 20px;
+			}
+			
+			.shtext {
+				text-shadow: 0 5px 7px rgba(0,0,0,0.25);
+			}
+
+			.avatar-big {
+				width: 160px;
+				height: 160px;
+				border-radius: 50%;
+				object-fit: cover;
+				display: block;
+				margin: 20px auto;
+				border: 4px solid #ccc;
+			}
+
+
+			.info {
+				background-color: #fff;
+				padding: 12px;
+				border-radius: 12px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+				margin-top: 20px;
+			}
+
+
+			.carousel-container {
+				margin-top: 20px;
+				position: relative;
+				overflow: hidden;
+				padding: 0 40px;
+			}
+
+
+			.carousel-track {
+				display: flex;
+				gap: 12px;
+				overflow-x: auto;
+				scroll-behavior: smooth;
+			}
+
+
+			.carousel-item {
+				min-width: 280px;
+				height: 180px;
+				flex-shrink: 0;
+				border-radius: 10px;
+				overflow: hidden;
+			}
+
+
+			.carousel-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+
+
+			.carousel-btn {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background: rgba(0,0,0,0.4);
+				color: white;
+				border: none;
+				padding: 10px 14px;
+				cursor: pointer;
+				font-size: 20px;
+				border-radius: 50%;
+			}
+
+
+			.carousel-btn:hover {
+				background: rgba(0,0,0,0.6);
+			}
+
+
+			.btn-left { left: 10px; }
+			.btn-right { right: 10px; }
+
+
+			.media-slider-container {
+				margin-top: 30px;
+				position: relative;
+				overflow: hidden;
+				border-radius: 10px;
+				background: #121212;
+				color: white;
+			}
+
+
+			.media-slider-track {
+				display: flex;
+				transition: transform 0.4s ease;
+			}
+
+
+			.media-slide {
+				min-width: 100%;
+				box-sizing: border-box;
+				padding: 20px;
+			}
+
+
+			video, audio {
+				width: 100%;
+				border-radius: 12px;
+				background: #000;
+			}
+
+
+			.media-slider-btn {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background: rgba(255,255,255,0.2);
+				border: none;
+				color: white;
+				padding: 10px 14px;
+				font-size: 24px;
+				cursor: pointer;
+				z-index: 2;
+				border-radius: 50%;
+			}
+
+
+			.media-slider-btn:hover {
+				background: rgba(255,255,255,0.4);
+			}
+
+
+			.media-btn-left { left: 10px; }
+			.media-btn-right { right: 10px; }
+
+
+			footer {
+				text-align: center;
+				font-size: 13px;
+				color: #777;
+				padding: 40px 0;
+				background: #f0f0f0;
+				margin-top: 40px;
+			}
+		</style>
+	</head>
+<body>
+
+
+	<header>
+	</header>
+  
+	<div class="banner">
+		<img src="https://images.pexels.com/photos/17179500/pexels-photo-17179500.jpeg" alt="Avatar" class="avatar-big">
+	</div>
+	
+	<div class="shtext" align="center">
+		<h1>Trang cá nhân: Nguyễn Thị Phương Thảo</h1>
+	</div>
+	
+	<div class="section">
+	
+		<div class="shtext">
+			<h2>Giới thiệu</h2>
+		</div>
+		
+		<div class="info">
+			<p>Xin chào! Mình là Thảo, là một người yêu mèo, thích đọc truyện, chơi game và đang học code, mong mọi người giúp đỡ</p>
+		</div>
+		
+	</div>
+
+
+	<div class="section">
+	
+		<div class="shtext">
+			<h2>Thông tin nhanh</h2>
+		</div>
+		
+		<div class="info">
+			<ul>
+				<li>Nơi sống: Hải Dương</li>
+				<li>Nghề nghiệp: Student</li>
+				<li>Email: nguyenthao10042007@gmail.com</li>
+				<li>Website: nthao.dev</li>
+			</ul>
+		</div>
+		
+	</div>
+
+
+	<div class="section">
+	
+		<div class="shtext">
+			<h2>Sở thích</h2>
+		</div>
+		
+		<div class="info">
+			<ul>
+				<li>Mèo</li>
+				<li>Chơi game</li>
+				<li>Đọc truyện</li>
+				<li>Mua sắm</li>
+			</ul>
+		</div>
+		
+	</div>
+
+
+	<div class="section">
+	
+		<div class="shtext">
+			<h2>Gallery ảnh</h2>
+		</div>
+		
+		<div class="carousel-container">
+			<button class="carousel-btn btn-left">&#8592;</button>
+			
+			<div class="carousel-track" id="carouselTrack">
+				<div class="carousel-item"><img src="https://images.pexels.com/photos/30173732/pexels-photo-30173732.jpeg" alt="1"></div>
+				<div class="carousel-item"><img src="https://images.pexels.com/photos/32545595/pexels-photo-32545595.jpeg" alt="2"></div>
+				<div class="carousel-item"><img src="https://images.pexels.com/photos/19691166/pexels-photo-19691166.jpeg" alt="3"></div>
+				<div class="carousel-item"><img src="https://images.pexels.com/photos/32520688/pexels-photo-32520688.jpeg" alt="4"></div>
+				<div class="carousel-item"><img src="https://images.pexels.com/photos/30395221/pexels-photo-30395221.jpeg" alt="5"></div>
+			</div>
+			
+			<button class="carousel-btn btn-right">&#8594;</button>
+		</div>
+		
+	</div>
+
+
+	<div class="section">
+	
+		<div class="shtext">
+			<h2>Video / Nhạc</h2>
+		</div>
+		
+		<div class="media-slider-container">
+		
+			<button class="media-slider-btn media-btn-left">&#8592;</button>
+			
+			<div class="media-slider-track" id="mediaSliderTrack">
+			
+				<div class="media-slide">
+					<video controls autoplay muted>
+						<source src="https://videos.pexels.com/video-files/27349959/12121107_2560_1440_30fps.mp4" type="video/mp4">Trình duyệt không hỗ trợ video.
+					</video>
+				</div>
+				
+				<div class="media-slide">
+					<video controls autoplay muted>
+						<source src="https://videos.pexels.com/video-files/19711805/19711805-hd_1920_1080_60fps.mp4" type="video/mp4">Trình duyệt không hỗ trợ video.
+					</video>
+				</div>
+				
+				<div class="media-slide">
+					<video controls>
+						<source src="https://videos.pexels.com/video-files/32438231/13835043_1920_1080_24fps.mp4" type="video/mp4">Trình duyệt không hỗ trợ video.
+					</video>
+				</div>
+				
+			</div>
+			
+			<button class="media-slider-btn media-btn-right">&#8594;</button>
+			
+		</div>
+	</div>
+
+	<script>
+		const photoTrack = document.getElementById('carouselTrack');
+		document.querySelector('.btn-left').onclick = () => photoTrack.scrollBy({ left: -300, behavior: 'smooth' });
+		document.querySelector('.btn-right').onclick = () => photoTrack.scrollBy({ left: 300, behavior: 'smooth' });
+
+		const mediaTrack = document.getElementById('mediaSliderTrack');
+		const mediaSlides = document.querySelectorAll('.media-slide');
+		let currentMedia = 0;
+
+		function showMedia(index) {
+		mediaSlides.forEach(slide => {
+			const media = slide.querySelector('video, audio');
+			if (media) {
+			media.pause();
+			media.currentTime = 0;
+			}
+		});
+
+		mediaTrack.style.transform = `translateX(-${index * 100}%)`;
+
+		const currentSlide = mediaSlides[index];
+		const media = currentSlide.querySelector('video, audio');
+		if (media) media.play();
+		}
+
+		document.querySelector('.media-btn-left').onclick = () => {
+			currentMedia = (currentMedia - 1 + mediaSlides.length) % mediaSlides.length;
+			showMedia(currentMedia);
+		};
+		document.querySelector('.media-btn-right').onclick = () => {
+			currentMedia = (currentMedia + 1) % mediaSlides.length;
+			showMedia(currentMedia);
+		};
+
+		showMedia(currentMedia);
+	</script>
+
+</body>
+</html>
+
+
+
+
