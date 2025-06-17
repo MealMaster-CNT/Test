@@ -1,0 +1,13 @@
+:root {
+  --navy-blue: #1e3a8a;
+  --dark-blue: #1e40af;
+  --light-blue: #3b82f6;
+  --white: #FFFFFF;
+  --orange: #f97316;
+  --orange-hover: #ea580c;
+  --text: #1e3a8a;
+  --text-light: #64748b;
+  --bg: #f8fafc;
+  --shadow: rgba(30, 58, 138, 0.15);
+  --shadow-dark: rgba(30, 58, 138, 0.25);
+}

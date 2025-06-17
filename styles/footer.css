@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background: var(--navy-blue);
+  color: var(--white);
+  font-size: 1rem;
+  margin-top: 60px;
+}
+footer a {
+  color: var(--orange);
+  text-decoration: none;
+  margin: 0 15px;
+  transition: all .3s ease;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+footer a:hover {
+  color: var(--white);
+  background: var(--orange);
+  transform: translateY(-2px);
+}

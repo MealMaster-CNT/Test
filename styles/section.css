@@ -1,0 +1,40 @@
+.section {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px var(--shadow);
+  margin-bottom: 50px;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy-blue), var(--orange));
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--orange), var(--orange-hover));
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(249, 115, 22, 0.3);
+}

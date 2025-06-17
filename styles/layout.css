@@ -1,0 +1,31 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+.title h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, var(--navy-blue), var(--light-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px var(--shadow);
+}
+.title span {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  font-weight: 500;
+}

@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .title h1 { font-size: 2.8rem; }
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  nav a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  .section {
+    padding: 30px 20px;
+    margin-bottom: 35px;
+  }
+  .profiles,
+  .tools {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 { font-size: 2.2rem; }
+  header { padding: 15px 20px; }
+  .container { padding: 0 15px; }
+  .section { padding: 25px 15px; }
+  .section-title { font-size: 1.6rem; }
+}
